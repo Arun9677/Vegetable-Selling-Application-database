@@ -1,9 +1,8 @@
 package veg;
 
 import java.util.Scanner;
-
-import Dao.OpInterface;
-import Dao.Operation;
+import Dao.OperationDao;
+import Dao.OperationDaoImpl;
 
 public class MainVeg {
 	
@@ -17,7 +16,7 @@ public static void main(String args[]) {
 	public void menu()
 	{
 		int ch;
-		OpInterface op = new Operation();
+		OperationDao op = new OperationDaoImpl();
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("1.Add");
